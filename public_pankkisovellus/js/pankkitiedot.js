@@ -3,7 +3,7 @@ var nimi = document.getElementById("name").value;
 var pin = document.getElementById("pin").value;
 console.log(nimi);
 console.log(pin);
-const = data {nimi,pin};
+const  data = {nimi,pin};
 const options = {
   method:"POST",
   headers: {"Content-Type":"application/json"
@@ -15,9 +15,9 @@ fetch('/pankkitietojen_talletus', options).then(function(response){
   if(response.status == 200){
     console.log("ok");
   }
-}, function error{
+}, function error(){
   console.log("ok");
-})
+});
 }
 async function lue_mitätuliläksyksi(){
   const response = await fetch("/salaisetpankkitiedot")

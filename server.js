@@ -7,7 +7,7 @@ app.listen(3000);
 app.use(express.static("public"));
 console.log("serveri käynnissä")
 app.use(express.json({limit:'1mb'}))
-const pankkikorttitiedot = [
+const  pankkikorttitiedot = [
   {
     "nimi" :"Pertti järvelä",
     "pin" : "6353"
