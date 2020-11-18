@@ -35,7 +35,9 @@
   <div class="otsikkoalue">
       <h1 class="otsikkoteksti">PekkaMaps</h1>
   </div>
+<div class="row">
 
+  <div class="col-sm-8">
   <div class="kartta_nappi_yhdistelma">
       <div id="kartta"></div>
       <!--<button class="tallenna_nappi" type="button" name="button">Tallenna sijainti</button>-->
@@ -52,12 +54,43 @@
       <div class="form-group">
           <label for="arvostelu">Arvostelu:</label>
           <input type="text" class="form-control" id="arvostelu">
+
+      </div>
+
+      <div class="form-group">
+          <label for="arvostelu">Arvostelija:</label>
+          <input type="text" class="form-control" id="arvostelija">
           <button onclick="kirjoita_kartalle()" type="button" class="ok_nappi">OK</button>
       </div>
       <!--<button type="button" class="ok_nappi">OK</button>-->
     </form>
   </div>
+  </div>
+    <div class="col-sm-4">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th>Paikka</th>
+              <th>Arvostelu</th>
+              <th>Arvostelija</th>
+
+          </tr>
+          <tr>
+            <td>Lepaa</td>
+            <td>En ole käynyt</td>
+            <td>Pekka</td>
+          </tr>
+          <tr>
+            <td>Tampere</td>
+            <td>Ihan hyvä</td>
+            <td>Pekka</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
 
 
+
+</div>
   </body>
 </html>

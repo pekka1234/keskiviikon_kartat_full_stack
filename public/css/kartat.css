@@ -15,8 +15,9 @@
 }
 .jh6{
   position: absolute;
+  background-color: black;
 top:50px;
-  right: 0px;
+  right: 1500px;
 }
 
 #kartta{
@@ -34,7 +35,7 @@ top:50px;
   border-radius: 50px;
   border-width: 20px;
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
   right: 20px;
   font-size: 24px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
