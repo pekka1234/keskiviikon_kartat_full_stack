@@ -4,6 +4,8 @@ var longitude;
 
 function valmista(){
 
+haePaikkatiedot();
+
   if("geolocation" in navigator) {
   console.log("Sijaintieto saatavilla");
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -28,6 +30,17 @@ function valmista(){
 }
 
 }
+async function haePaikkatiedot(){
+  const response = await fetch("/haevierailut")
+  const data = await response.json();
+  console.log(data);
+
+    L.marker([data[0].latitude, data[0].longitude]).addTo(map)
+    .bindPopup(data[0].paikka + "<br>" + data[0].arvostelu)
+    .openPopup();
+}
+
+
 
 function tallenna_sijainti() {
   var sijaintilomake = document.getElementById("arvostelulomake");
@@ -45,7 +58,4 @@ function kirjoita_kartalle(){
   .bindPopup(paikka + "<br>" + arvostelu)
   .openPopup();
 
-}
-function yh6(){
-  alert("Löysit salaisen napin!");
 }
