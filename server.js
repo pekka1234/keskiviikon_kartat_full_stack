@@ -20,13 +20,22 @@ const  pankkikorttitiedot = [
 ]
 const  paikkatiedot = [
   {
-    "latitude" : "61.4740",
+    "latitude":"61.4740",
     "longitude" : "23.8419",
     "paikka" :"Turtola",
     "arvostelu" : "Yäk",
-    "arvostelija" : "Pekka"
+    "arvostelija" : "Pekka",
 
-  }
+  },
+  {
+
+  "latitude" : "61.4509",
+  "longitude" : "23.8488",
+  "paikka" :"Hervanta",
+  "arvostelu" : "Haisee",
+  "arvostelija" : "Pekka"
+}
+
 
 
 ]
