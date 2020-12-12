@@ -84,7 +84,7 @@ if(localStorage.getItem("klikkauks") == null){klik = 10000}else{var klik = local
 function j(){
 
 
-klik = klik - 1555;
+klik = klik - 1;
 var f = document.getElementById("a").innerHTML = klik;
 localStorage.setItem("klikkauks", klik);
 console.log(klik);
