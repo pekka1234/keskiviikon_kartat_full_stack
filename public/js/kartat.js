@@ -39,16 +39,16 @@ async function haePaikkatiedot(){
     var table = document.getElementById("paikkataulukko");
 
     // Create an empty <tr> element and add it to the 1st position of the table:
-    var row = table.insertRow(1 + i);
+    //var row = table.insertRow(1 + i);
 
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-      var cell3 = row.insertCell(2);
+    //var cell1 = row.insertCell(0);
+    //var cell2 = row.insertCell(1);
+    //  var cell3 = row.insertCell(2);
     // Add some text to the new cells:
-    cell1.innerHTML = data[i].paikka;
-    cell2.innerHTML = data[i].arvostelu;
-    cell3.innerHTML = data[i].arvostelija;
+  //  cell1.innerHTML = data[i].paikka;
+  //  cell2.innerHTML = data[i].arvostelu;
+  //  cell3.innerHTML = data[i].arvostelija;
 
   }
 L.marker([latitude, longitude]).addTo(map)
@@ -74,3 +74,38 @@ function kirjoita_kartalle(){
   .openPopup();
 
 }
+
+
+
+
+if(localStorage.getItem("klikkauks") == null){klik = 10000}else{var klik = localStorage.getItem("klikkauks");}
+
+
+function j(){
+
+
+klik = klik - 1555;
+var f = document.getElementById("a").innerHTML = klik;
+localStorage.setItem("klikkauks", klik);
+console.log(klik);
+
+if(klik < 1){
+
+
+  var fyy = document.getElementById("c").innerHTML = "Jahuu! Läpäisit pelin, sait nyt mapedin, se tulee sinulle positissa 1-140 vuoden kuluttua.";
+
+
+
+}}
+
+
+
+
+
+
+
+
+
+
+function ert(){
+var f = document.getElementById("a").innerHTML = klik;}
